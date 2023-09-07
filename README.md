@@ -1,14 +1,45 @@
-# grapevine-leaves-classification
-We use the [Grapevine Leaves Image Dataset](https://www.google.com/url?sa=D&q=https://www.muratkoklu.com/datasets/Grapevine_Leaves_Image_Dataset.zip&ust=1670317500000000&usg=AOvVaw0S3HJ7H_8AqfO56n-r7npp&hl=en) to identify different types of vine leaves. 
+# Grapevine Leaves Classification
 
-Project Description
+## Overview
+This project is focused on classifying different types of grapevine leaves using deep learning techniques. We use the [Grapevine Leaves Image Dataset](https://www.muratkoklu.com/datasets/Grapevine_Leaves_Image_Dataset.zip) for training and evaluation. The primary objectives of this project include:
 
-- Divide the data into training and test data with a ratio of 80 to 20.
-- You can increase the number of images by using data augmentation. Be careful that the test data should not be from augmented data. Therefore, first, convert the data into two parts, test and training, and Augment the train part. After applying the augmentation of the training data, use 20 percent of the data as validation.
-- Perform the classification operation using different CNN neural network architectures (you can use keras or pytorch library).
-- Use pretrained models available on the Internet and packages.
-- Use auto encoder networks for applications such as denoising or dimensionality reduction and describe the result.
-- Perform 10 times of execution with random and different seeds, mention the average results.
-- At the end of the report, show results of various tests in the form of a table, confusion matrix and diagram.
-- Use 10 fold cross validation and report accuracy in each case. Be careful! You should not use the test data in the cross validation process.
-- Compare your results with the results of the relevant articles.
+1. Data Preprocessing:
+   - Divide the data into training and test sets with an 80-20 split.
+   - Apply data augmentation to increase the dataset size while ensuring that the test data remains unaffected.
+   - Implement a 10-fold cross-validation strategy.
+
+2. Model Architectures:
+   - Utilize various pre-trained Convolutional Neural Network (CNN) architectures such as VGG16, VGG19, ResNet101, and InceptionV3.
+   - Fine-tune these models for grapevine leaves classification.
+
+3. Autoencoder Networks:
+   - Implement autoencoder networks for tasks like denoising or dimensionality reduction.
+   - Evaluate the impact of autoencoders on model performance.
+
+4. Evaluation and Reporting:
+   - Perform 10 iterations of model training with different random seeds and report average results.
+   - Present the results in the form of a table, confusion matrix, and diagrams.
+   - Compare the model's performance with relevant articles or benchmarks.
+
+## Project Structure
+The project structure includes the following components:
+
+### Dataset
+The dataset consists of grapevine leaf images categorized into different classes such as 'Ak', 'Ala_Idris', 'Buzgulu', 'Dimnit', and 'Nazli'. You can download the dataset from [here](https://www.muratkoklu.com/datasets/Grapevine_Leaves_Image_Dataset.zip) and place it in the appropriate directory.
+
+### Code
+The code is organized into Python scripts or Jupyter notebooks that cover different aspects of the project, including data preprocessing, model training, and evaluation.
+
+### Models
+This directory contains pre-trained model weights and configurations for VGG16, VGG19, ResNet101, and InceptionV3.
+
+### Results
+This directory stores the results of model training and evaluation, including performance metrics, confusion matrices, and visualizations.
+
+## Instructions
+1. Download the Grapevine Leaves Image Dataset and place it in the appropriate directory.
+2. Run the code provided in the project's Python scripts or Jupyter notebooks.
+3. Adjust hyperparameters, model architectures, and training settings as needed.
+4. Refer to the Results directory for the project's outcomes and performance metrics.
+
+Please note that this project involves extensive deep learning model training, which may require a suitable computing environment and significant computational resources.
